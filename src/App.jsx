@@ -157,7 +157,7 @@ function App() {
             venue="ATMECE Mysuru"
             time="2:00pm - 4:45pm"
             date="Dec 10th 2025"
-            registrationLink="https://forms.gle/1R2gMc3PWX2RLpj6A"
+            registrationLink="https://forms.gle/EaWL2zwKfNHoKaU38"
           />
           <Agenda />
           <Prerequisites />
