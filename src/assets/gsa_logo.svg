@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 64">
+  <style>
+    .gsa-text { font-family: 'Roboto', 'Arial', sans-serif; font-size: 16px; font-weight: 500; }
+  </style>
+  <text x="0" y="40">
+    <tspan class="gsa-text" fill="#4285F4">Google</tspan>
+    <tspan class="gsa-text" fill="#3C4043"> Student Ambassadors</tspan>
+  </text>
+</svg>
