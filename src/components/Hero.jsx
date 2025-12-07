@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, Button, Container } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-const Hero = ({ eventName, venue, time, registrationLink }) => {
+const Hero = ({ eventName, venue, time, date, registrationLink }) => {
   const theme = useTheme();
   return (
     <Box
@@ -27,6 +27,9 @@ const Hero = ({ eventName, venue, time, registrationLink }) => {
       <Container maxWidth="md">
         <Typography variant="h1" component="h1" gutterBottom sx={{ fontWeight: 'bold', mb: 2, color: 'white' }}>
           {eventName}
+        </Typography>
+        <Typography variant="h5" component="h3" sx={{ mb: 1, color: 'rgba(255, 255, 255, 0.9)' }}>
+          {date}
         </Typography>
         <Typography variant="h4" component="h2" sx={{ mb: 3, color: 'rgba(255, 255, 255, 0.9)' }}>
           {venue} | {time}
