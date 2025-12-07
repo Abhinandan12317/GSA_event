@@ -10,9 +10,9 @@ import { useTheme } from '@mui/material/styles';
 const Agenda = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ py: 8, bgcolor: 'rgba(219, 68, 55, 0.9)', backdropFilter: 'blur(10px)', pointerEvents: 'auto', borderRadius: 4, margin: 2 }}>
+    <Box sx={{ py: 8, bgcolor: 'rgba(0, 0, 0, 0.2)', backdropFilter: 'blur(10px)', pointerEvents: 'auto', borderRadius: 4, margin: 2 }}>
       <Container maxWidth="md">
-        <Typography variant="h3" component="h2" sx={{ textAlign: 'center', mb: 6, fontWeight: 'bold', color: 'white' }}>
+        <Typography variant="h2" component="h2" sx={{ textAlign: 'center', mb: 6, color: 'white' }}>
           Event Agenda
         </Typography>
         <Timeline position="alternate">

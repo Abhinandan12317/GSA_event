@@ -15,17 +15,18 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
         textAlign: 'center',
         position: 'relative',
         zIndex: 1,
-        p: 3,
-        bgcolor: 'rgba(66, 133, 244, 0.9)', // Google Blue
+        p: 4,
+        background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.secondary.main} 100%)`,
         backdropFilter: 'blur(10px)',
         webkitBackdropFilter: 'blur(10px)',
         borderRadius: 4, // 16px
         pointerEvents: 'auto',
         margin: 2,
+        boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
       }}
     >
       <Container maxWidth="md">
-        <Typography variant="h1" component="h1" gutterBottom sx={{ fontWeight: 'bold', mb: 2, color: 'white' }}>
+        <Typography variant="h1" component="h1" gutterBottom sx={{ mb: 2, color: 'white' }}>
           {eventName}
         </Typography>
         <Typography variant="h5" component="h3" sx={{ mb: 1, color: 'rgba(255, 255, 255, 0.9)' }}>
@@ -43,10 +44,6 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
           rel="noopener noreferrer"
           sx={{
             mt: 4,
-            p: 2,
-            fontSize: '1.2rem',
-            fontWeight: 'bold',
-            borderRadius: '50px',
             '&:hover': {
               transform: 'scale(1.05)',
               transition: 'transform 0.3s ease-in-out',

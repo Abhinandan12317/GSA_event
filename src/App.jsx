@@ -21,8 +21,8 @@ const googleColors = {
   red: '#DB4437',
   yellow: '#F4B400',
   green: '#0F9D58',
-  gray: '#F8F8F8',
-  darkGray: '#3C4043',
+  gray: '#F8F9FA',
+  darkGray: '#202124',
   white: '#FFFFFF',
 };
 
@@ -50,21 +50,60 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['Roboto', 'Arial', 'sans-serif'].join(','),
+    fontFamily: ['Poppins', 'sans-serif'].join(','),
     h1: {
-      fontSize: '3rem',
+      fontSize: '4rem',
       fontWeight: 700,
       color: googleColors.white,
+      letterSpacing: '-0.01562em',
     },
     h2: {
-      fontSize: '2.5rem',
+      fontSize: '3rem',
       fontWeight: 600,
       color: googleColors.white,
+      letterSpacing: '-0.00833em',
     },
     h3: {
+      fontSize: '2.5rem',
+      fontWeight: 500,
+      color: googleColors.white,
+      letterSpacing: '0em',
+    },
+    h4: {
       fontSize: '2rem',
       fontWeight: 500,
       color: googleColors.white,
+      letterSpacing: '0.00735em',
+    },
+    h5: {
+      fontSize: '1.5rem',
+      fontWeight: 500,
+      color: googleColors.white,
+      letterSpacing: '0em',
+    },
+    body1: {
+      fontSize: '1rem',
+      fontWeight: 400,
+      color: 'rgba(255, 255, 255, 0.85)',
+      letterSpacing: '0.00938em',
+    },
+    body2: {
+      fontSize: '0.875rem',
+      fontWeight: 400,
+      color: 'rgba(255, 255, 255, 0.7)',
+      letterSpacing: '0.01071em',
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '50px',
+          textTransform: 'none',
+          fontWeight: 600,
+          padding: '10px 24px',
+        },
+      },
     },
   },
 });

@@ -38,25 +38,25 @@ const About = () => {
   return (
     <Box sx={{
       py: 8,
-      bgcolor: 'transparent',
+      bgcolor: 'rgba(0, 0, 0, 0.2)',
       color: theme.palette.text.primary,
       position: 'relative',
       zIndex: 1,
     }}>
       <Container maxWidth="lg">
-        <Typography variant="h3" component="h2" sx={{ textAlign: 'center', mb: 6, fontWeight: 'bold', color: 'white' }}>
+        <Typography variant="h2" component="h2" sx={{ textAlign: 'center', mb: 6, color: 'white' }}>
           About the Speakers
         </Typography>
         <Grid container spacing={4} justifyContent="center">
           {speakers.map((speaker, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card sx={{ 
-                height: '100%', 
-                display: 'flex', 
-                flexDirection: 'column', 
-                boxShadow: 3, 
-                bgcolor: 'rgba(15, 157, 88, 0.9)', 
-                backdropFilter: 'blur(10px)', 
+              <Card sx={{
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column',
+                boxShadow: 3,
+                bgcolor: 'rgba(255, 255, 255, 0.05)',
+                backdropFilter: 'blur(10px)',
                 borderRadius: 4, // 16px
                 transition: 'transform 0.3s ease-in-out',
                 '&:hover': {
@@ -78,7 +78,7 @@ const About = () => {
                   />
                 </Box>
                 <CardContent sx={{ flexGrow: 1, textAlign: 'center' }}>
-                  <Typography gutterBottom variant="h5" component="h3" sx={{ fontWeight: 'bold', color: 'white' }}>
+                  <Typography gutterBottom variant="h5" component="h3" sx={{ color: 'white' }}>
                     {speaker.name}
                   </Typography>
                   <Typography variant="subtitle1" sx={{ color: 'rgba(255, 255, 255, 0.9)' }}>
