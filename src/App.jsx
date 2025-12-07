@@ -150,10 +150,10 @@ function App() {
       </Canvas>
 
       <MuiBox sx={{ color: googleColors.darkGray, pointerEvents: 'none' }}>
-        <Header eventName="Gemini-CLI learn and build" />
+        <Header eventName="Play with Gemini" />
         <main>
           <Hero
-            eventName="Gemini-CLI learn and build"
+            eventName="Play with Gemini CLI edition"
             venue="ATMECE Mysuru"
             time="2:00pm - 4:45pm"
             date="Dec 10th 2025"

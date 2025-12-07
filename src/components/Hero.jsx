@@ -16,7 +16,7 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
         position: 'relative',
         zIndex: 1,
         p: 4,
-        background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.secondary.main} 100%)`,
+        background: `linear-gradient(135deg, #4CAF50 0%, #81C784 100%)`,
         backdropFilter: 'blur(10px)',
         webkitBackdropFilter: 'blur(10px)',
         borderRadius: 4, // 16px
@@ -26,13 +26,16 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
       }}
     >
       <Container maxWidth="md">
-        <Typography variant="h1" component="h1" gutterBottom sx={{ mb: 2, color: 'white' }}>
+        <Typography variant="h1" component="h1" gutterBottom sx={{ mb: 2, color: '#004d40' }}>
           {eventName}
         </Typography>
-        <Typography variant="h5" component="h3" sx={{ mb: 1, color: 'rgba(255, 255, 255, 0.9)' }}>
+        <Typography variant="h5" component="h4" sx={{ mb: 3, color: 'rgba(0, 77, 64, 0.9)' }}>
+          Hands on Workshop to Build, Prompt and Execute in Realtime
+        </Typography>
+        <Typography variant="h5" component="h3" sx={{ mb: 1, color: 'rgba(0, 77, 64, 0.9)' }}>
           {date}
         </Typography>
-        <Typography variant="h4" component="h2" sx={{ mb: 3, color: 'rgba(255, 255, 255, 0.9)' }}>
+        <Typography variant="h4" component="h2" sx={{ mb: 3, color: 'rgba(0, 77, 64, 0.9)' }}>
           {venue} | {time}
         </Typography>
         <Button
@@ -44,7 +47,9 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
           rel="noopener noreferrer"
           sx={{
             mt: 4,
+            backgroundColor: '#ff6f61',
             '&:hover': {
+              backgroundColor: '#ff8a80',
               transform: 'scale(1.05)',
               transition: 'transform 0.3s ease-in-out',
             },

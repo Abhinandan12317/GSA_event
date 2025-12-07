@@ -21,9 +21,6 @@ const Footer = () => {
         <Typography variant="body2">
           &copy; {new Date().getFullYear()} Gemini-CLI Learn and Build. All rights reserved.
         </Typography>
-        <Typography variant="body2" sx={{ mt: 1 }}>
-          Contact Abhinandan: <Link href="tel:+919482053968" sx={{ color: 'white' }}>9482053968</Link>
-        </Typography>
       </Container>
     </Box>
   );

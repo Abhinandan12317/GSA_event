@@ -4,6 +4,19 @@ import { useTheme } from '@mui/material/styles';
 import gsaLogo from '../assets/GSA.png';
 import atmeLogo from '../assets/atme_logo.png';
 
+const GoogleColorText = ({ text }) => {
+    const googleColors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
+    return (
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            {text.split('').map((char, index) => (
+                <span key={index} style={{ color: googleColors[index % googleColors.length] }}>
+                    {char}
+                </span>
+            ))}
+        </Typography>
+    );
+};
+
 const Header = ({ eventName }) => {
   const theme = useTheme();
   return (
@@ -18,9 +31,7 @@ const Header = ({ eventName }) => {
       }}
     >
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'white' }}>
-          {eventName}
-        </Typography>
+        <GoogleColorText text={eventName} />
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
           <Box sx={{ bgcolor: 'white', p: 0.5, borderRadius: 1 }}>
             <img src={gsaLogo} alt="Google Student Ambassador Program" style={{ height: '40px' }} />
