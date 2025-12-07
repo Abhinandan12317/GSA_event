@@ -1,20 +1,20 @@
 import React from 'react';
 import { Box, Typography, Container, Grid, Link, Paper } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import atmeLogo from '../assets/atme_logo.png';
+import atmeLogo from '../assets/atme_full.png';
 
 const sponsors = [
   {
     name: 'ATME College of Engineering',
     logo: atmeLogo,
-    url: 'https://atme.in/',
+    url: 'https://atme.edu.in/',
   },
 ];
 
 const Sponsors = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ py: 8, bgcolor: 'transparent', pointerEvents: 'auto', margin: 2 }}>
+    <Box sx={{ py: 8, bgcolor: 'transparent', pointerEvents: 'auto', margin: 0 }}>
       <Container maxWidth="md">
         <Typography variant="h3" component="h2" sx={{ textAlign: 'center', mb: 6, fontWeight: 'bold', color: 'white' }}>
           Our Host
@@ -41,7 +41,7 @@ const Sponsors = () => {
                     borderRadius: 4, // 16px
                   }}
                 >
-                  <img src={sponsor.logo} alt={`${sponsor.name} logo`} style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain', height: '80px' }} />
+                  <img src={sponsor.logo} alt={`${sponsor.name} logo`} style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain', height: '100px' }} />
                 </Paper>
               </Link>
             </Grid>
