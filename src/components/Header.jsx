@@ -10,9 +10,7 @@ const Header = ({ eventName }) => {
     <AppBar position="static" sx={{ background: 'transparent', boxShadow: 'none', pointerEvents: 'auto' }}>
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
-          <Box sx={{ bgcolor: 'white', p: 0.5, borderRadius: 1 }}>
-            <img src={gsaLogo} alt="Google Student Ambassador Program" style={{ height: '60px' }} />
-          </Box>
+          <img src={gsaLogo} alt="Google Student Ambassador Program" style={{ height: '50px', marginRight: '10px' }} />
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
         </Box>
