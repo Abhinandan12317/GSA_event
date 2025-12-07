@@ -16,7 +16,7 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
         position: 'relative',
         zIndex: 1,
         p: 4,
-        background: `linear-gradient(135deg, #4CAF50 0%, #81C784 100%)`,
+        background: `linear-gradient(135deg, #367dc0ff 0%, #62d758ff 100%)`,
         backdropFilter: 'blur(10px)',
         webkitBackdropFilter: 'blur(10px)',
         borderRadius: 4, // 16px
@@ -26,16 +26,14 @@ const Hero = ({ eventName, venue, time, date, registrationLink }) => {
       }}
     >
       <Container maxWidth="md">
-        <Typography variant="h1" component="h1" gutterBottom sx={{ mb: 2, color: '#004d40' }}>
+        <Typography variant="h1" component="h1" gutterBottom sx={{ mb: 2, color: '#ffff' }}>
           {eventName}
+          
         </Typography>
-        <Typography variant="h5" component="h4" sx={{ mb: 3, color: 'rgba(0, 77, 64, 0.9)' }}>
-          Hands on Workshop to Build, Prompt and Execute in Realtime
-        </Typography>
-        <Typography variant="h5" component="h3" sx={{ mb: 1, color: 'rgba(0, 77, 64, 0.9)' }}>
+        <Typography variant="h5" component="h3" sx={{ mb: 1, color: '#ffff' }}>
           {date}
         </Typography>
-        <Typography variant="h4" component="h2" sx={{ mb: 3, color: 'rgba(0, 77, 64, 0.9)' }}>
+        <Typography variant="h4" component="h2" sx={{ mb: 3, color: '#ffff' }}>
           {venue} | {time}
         </Typography>
         <Button
