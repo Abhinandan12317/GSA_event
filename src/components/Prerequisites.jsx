@@ -34,7 +34,7 @@ const Prerequisites = () => {
         <Paper elevation={3} sx={{ 
           p: 4, 
           borderRadius: 4, // 16px
-          bgcolor: 'rgba(244, 180, 0, 0.9)', 
+          bgcolor: 'rgba(219, 68, 55, 0.9)', // Using Google Red
           backdropFilter: 'blur(10px)',
           transition: 'transform 0.3s ease-in-out',
           '&:hover': {
