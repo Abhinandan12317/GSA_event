@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, Container, Grid, Link, Paper } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import atmeLogo from '../assets/atme_full.png';
-import cseLogo from '../assets/Dept_CSE.jpeg';
+import Dept_CSE from '../assets/Dept_CSE.jpeg';
 
 const sponsors = [
   {
@@ -11,10 +11,10 @@ const sponsors = [
     url: 'https://atme.edu.in/',
   },
   {
-    name: 'Department of CSE, ATME',
-    logo: cseLogo,
-    url: 'https://atme.edu.in/cse/',
-  },
+    name: 'Dept CSE',
+    logo: Dept_CSE,
+    url: 'https://atme.edu.in/',
+  }
 ];
 
 const Sponsors = () => {
@@ -22,7 +22,7 @@ const Sponsors = () => {
   return (
     <Box sx={{ py: 8, bgcolor: 'transparent', pointerEvents: 'auto', margin: 0 }}>
       <Container maxWidth="md">
-        <Typography variant="h3" component="h2" sx={{ textAlign: 'center', mb: 6, fontWeight: 'bold', color: '#004d40' }}>
+        <Typography variant="h3" component="h2" sx={{ textAlign: 'center', mb: 6, fontWeight: 'bold', color: 'white' }}>
           Our Host
         </Typography>
         <Grid container spacing={4} justifyContent="center" alignItems="center">
@@ -42,7 +42,7 @@ const Sponsors = () => {
                       transform: 'scale(1.05)',
                       boxShadow: 6,
                     },
-                    bgcolor: '#FFFFFF',
+                    bgcolor: 'rgba(255, 255, 255, 0.9)', 
                     backdropFilter: 'blur(10px)',
                     borderRadius: 4, // 16px
                   }}

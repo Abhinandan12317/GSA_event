@@ -50,7 +50,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['Poppins', 'sans-serif'].join(','),
+    fontFamily: ['Comic Neue', 'sans-serif'].join(','),
     h1: {
       fontSize: '4rem',
       fontWeight: 700,
