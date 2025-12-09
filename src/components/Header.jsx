@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import gsaLogo from '../assets/GSA.png';
+
 import atmeLogo from '../assets/atme_logo.png';
 
 const GoogleColorText = ({ text }) => {
@@ -33,9 +33,6 @@ const Header = ({ eventName }) => {
       <Toolbar>
         <GoogleColorText text={eventName} />
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
-          <Box sx={{ bgcolor: 'white', p: 0.5, borderRadius: 1 }}>
-            <img src={gsaLogo} alt="Google Student Ambassador Program" style={{ height: '40px' }} />
-          </Box>
           <img src={atmeLogo} alt="ATME College of Engineering" style={{ height: '50px' }} />
         </Box>
       </Toolbar>
