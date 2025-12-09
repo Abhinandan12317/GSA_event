@@ -33,7 +33,7 @@ const Header = ({ eventName }) => {
       <Toolbar>
         <GoogleColorText text={eventName} />
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
-          <img src={atmeLogo} alt="ATME College of Engineering" style={{ height: '50px' }} />
+          <img src={atmeLogo} alt="ATME College of Engineering" style={{ height: '50px' , background: 'white', borderRadius: '10px'}} />
         </Box>
       </Toolbar>
     </AppBar>
