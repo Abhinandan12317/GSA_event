@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-import atmeLogo from '../assets/atme_logo.png';
+import atmeLogo from '../assets/atme_full.png';
 
 const GoogleColorText = ({ text }) => {
     const googleColors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58'];
